@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+  <center>
+    <section id="singup" class="sec1">
+        <div class="main1">
+        <div style="margin-top: 10px;" class="heading"><h1>Quize App</h1></div>
+        <div style="margin-top: 30px;" class="nameinp"><input type="text" placeholder="Enter Name" name="" id="name1"></div> <br>
+        <div style="margin-top: 10px;" class="emailinp"><input type="email" placeholder="Enter Email" name="" id="email1"></div> <br>
+        <div style="margin-top: 10px;" class="passwordinp"><input type="password" placeholder="Enter Password" name="" id="password1"></div>
+        <div><button onclick="singupbtn(this)" class="singupbtn">Sing Up</button></div>
+      <div style="font-size: 15px; margin-top: 10px;"><p>Have already an account?  <span onclick="loginhere(this)" style="font-size: 20px; color: blue;">Login</span></p></div>
+        </div>
+       </section>
+  </center>
+    
+
+
+    <center>
+        <section id="login" class="sec1">
+            <div class="main2">
+            <div style="margin-top: 10px;" class="heading"><h1>Quize App</h1></div>
+                <div style="margin-top: 40px;" class="emailinp"><input type="email" placeholder="Enter Email" name="" id="email2"></div> <br>
+            <div class="passwordinp"><input type="password" placeholder="Enter Password" name="" id="password2"></div>
+            <div><button onclick="loginbtn(this)" class="singupbtn">Login</button></div>
+            </div>
+           </section>
+    </center>
+
+
+<div class="main" id="main">
+    <div class=" container " id="container">
+        <h1 class="text-center text-dark mt-3">QUIZZ APP</h1>
+    
+        <hr>
+        <div class="d-flex justify-content-between">
+
+            <h3 class="text-primary"><span class="text-primary" id="questionIndex"></span></h3>
+        </div>
+        <hr>
+        <div>
+            <h5 class="ms-2 mt-1 text-dark" id="questionNumber"></h5>
+        </div>
+        <div class="row" id="options">
+
+
+        </div>
+        <div class="text-end me-5 mt-1 ms-5">
+            <button class="btn bg-dark" id="btn" onclick="change(this)">Skip</button>
+
+        </div>
+
+    </div>
+</div>
+    <div class="second mt-5" id="resuldata">
+        <div class="">
+            <h1 class="text-center " id="result" mt-5> helloo</h1>
+            <h5 class="text-center " id="grade" mt-5> </h5>
+        </div>
+        <section class="resultsec">
+            <section id="A1grade">
+                <div class="text-center resultimg"><img src="https://4.bp.blogspot.com/-V2gRx-eZfS4/W5L99OniBkI/AAAAAAAAWik/s46aoMOAEow8hcfgkjH-L998K4G3gKnLACLcBGAs/s1600/good-grades-smiley.png" height="100%" width="100%"  alt=""></div>
+            </section>
+
+            <section id="Agrade">
+                <div class="text-center resultimg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHjaypibRQtUnCTZKqfIkJIRxIENBUS_JoMqtJmjUT2EU4xJAoyjEO7iipBIU6pdE2c78&usqp=CAU" height="100%" width="100%"  alt=""></div>
+            </section>
+
+            <section id="Bgrade">
+                <div class="text-center resultimg"><img src="https://i.pinimg.com/736x/a6/6f/fd/a66ffdef26fc78d4d48beae55e39923c--smiley-faces.jpg" height="100%" width="100%"  alt=""></div>
+            </section>
+
+          <section id="Cgrade">
+            <div class="text-center resultimg"><img src="https://i.pinimg.com/1200x/c9/fb/a7/c9fba753fb516d547347a6128fadf41f.jpg" height="100%" width="100%"  alt=""></div>
+          </section>
+
+           <section id="Dgrade">
+            <div class="text-center resultimg"><img src="https://rlv.zcache.com/big_sad_eyes_emoji_face_stickers-rb915724eb4b34939b8fe840648558feb_0ugmp_8byvr_307.jpg" height="100%" width="100%"  alt=""></div>
+           </section>
+
+            <section id="failgrade">
+                <div class="text-center resultimg"><img src="https://www.gracejudson.com/wp-content/uploads/2020/06/2020-06-29_failure-or-success.png" height="100%" width="100%"  alt=""></div>
+            </section>
+        </section>
+        <div class="text-center" id="logout"><button onclick="logout(this)"  class="btn bg-dark text-white">Log out</button></div>
+    </div>
+
+
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
